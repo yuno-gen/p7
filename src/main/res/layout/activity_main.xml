@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:gravity="center"
+    android:background="@color/white_dim"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="REGISTRATION"
+        android:textColor="@color/purple_200"
+        android:textSize="40sp"
+        android:background="@drawable/custom_tv"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="13dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="251dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/teal_700"
+            android:progressTint="@color/purple_500"
+            android:scaleY="5"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/tomato"
+            android:text="0 %"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/custom_tv"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="NAME :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Enter Name"
+                    android:paddingLeft="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                 <ImageButton
+                     android:id="@+id/btname"
+                     android:layout_width="16dp"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/img_tickwr"
+                     android:scaleType="fitStart"
+                     android:background="@drawable/custom_button"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Unique ID:"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMName"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="8 Digit Unique ID"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btmname"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="EMAIL :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="abc@xyz.com"
+                    android:paddingLeft="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btemail"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="D.O.B :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="DD/MM/YYYY"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/teal_700"
+                    android:paddingLeft="8dp"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btdob"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Mob. :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="+91/0xxxxxxxxxx"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btmob"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Address :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Your Address"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btaddr"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="City :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Your City of Residence"
+                    android:paddingLeft="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btcity"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="State :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Your State"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btstate"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPerc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="12th Perc. :"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPerc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Your 12th Percentage"
+                    android:paddingLeft="8dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/teal_700"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/btperc"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_tickwr"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/custom_button"
+                    />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Ready to Submit"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/purple_200"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:onClick="onSubmit"
+                android:textSize="20sp"
+                app:cornerRadius="16dp" />
+            <Button
+                android:id="@+id/buttonFetch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="FETCH DETAILS"
+                android:textColor="@color/white"
+                android:onClick="onFetch"
+                android:textSize="20sp"
+                app:cornerRadius="16dp" />
+            <Button
+                android:id="@+id/buttonResubmit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="200dp"
+                android:backgroundTint="@color/purple_700"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Re-submit Form"
+                android:textColor="@color/white"
+                android:onClick="onReSubmit"
+                android:textSize="20sp"
+                app:cornerRadius="16dp" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
